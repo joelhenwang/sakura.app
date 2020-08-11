@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:menu/takeawayHero.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'rodizioPage.dart';
 import 'takeawayPage.dart';
@@ -144,7 +145,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
                             opacity: opacityLevel2,
                             child: SlideTransition(
                               position: takeawayPos,
-                              child: menuButton(destPage: takeawayScaffold(),buttonText: 'TAKEAWAY',)
+                              child: menuButton(destPage: takeHeroScaffold(),buttonText: 'TAKEAWAY',)
                             ),
                           ),
                           AnimatedOpacity(

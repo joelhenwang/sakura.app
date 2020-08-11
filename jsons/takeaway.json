@@ -2,84 +2,84 @@
   {
     "id": 1,
     "nome": "Arroz Teppanyaki",
-    "IMGpath": "0.arrozTeppanyaki.JPG",
+    "IMGpath": "assets/takeaway/0.arrozTeppanyaki.JPG",
     "price": 2.000
   },
 
   {
     "id": 2,
     "nome": "Sopa Miso",
-    "IMGpath": "1.sopaMiso.JPG",
+    "IMGpath": "assets/takeaway/1.sopaMiso.JPG",
     "price": 2.000
   },
 
   {
     "id": 3,
     "nome": "Salada c/ Salmão Picado",
-    "IMGpath": "2.saladaSalmao.JPG",
+    "IMGpath": "assets/takeaway/2.saladaSalmao.JPG",
     "price": 3.50
   },
 
   {
     "id": 4,
     "nome": "Raviolis",
-    "IMGpath": "3.raviolis.JPG",
+    "IMGpath": "assets/takeaway/3.raviolis.JPG",
     "price": 7.90
   },
 
   {
     "id": 5,
     "nome": "Massa c/ Legumes",
-    "IMGpath": "massaLegumes.JPG",
+    "IMGpath": "assets/takeaway/massaLegumes.JPG",
     "price": 6.90
   },
 
   {
     "id": 6,
     "nome": "Mini Crepes",
-    "IMGpath": "4.miniCrepes.JPG",
+    "IMGpath": "assets/takeaway/4.miniCrepes.JPG",
     "price": 4.00
   },
 
   {
     "id": 7,
     "nome": "Espetadas de Frango",
-    "IMGpath": "5.espetadasFrango.JPG",
+    "IMGpath": "assets/takeaway/5.espetadasFrango.JPG",
     "price": 7.90
   },
 
   {
     "id": 8,
     "nome": "Panado de Porco",
-    "IMGpath": "6.panadoPorco.JPG",
+    "IMGpath": "assets/takeaway/6.panadoPorco.JPG",
     "price": 7.90
   },
 
   {
     "id": 9,
     "nome": "Tempura de Gambas",
-    "IMGpath": "7.tempuraGambas.JPG",
+    "IMGpath": "assets/takeaway/7.tempuraGambas.JPG",
     "price": 7.90
   },
 
   {
     "id": 12,
     "nome": "Panado de Frango",
-    "IMGpath": "10.panadoFrango.JPG",
+    "IMGpath": "assets/takeaway/10.panadoFrango.JPG",
     "price": 7.90
   },
 
   {
     "id": 66,
     "nome": "Gambas Croquete",
-    "IMGpath": "42.gambasCroquete.JPG",
+    "IMGpath": "assets/takeaway/42.gambasCroquete.JPG",
     "price": 7.90
   },
 
   {
     "id": 67,
     "nome": "Massa c/ Gambas",
-    "IMGpath": "massaGambas.JPG",
+    "IMGpath": "assets/takeaway/massaGambas.JPG",
     "price": 9.90
   },
 
@@ -89,181 +89,181 @@
   {
     "id": 10,
     "nome": "Choco Teppanyaki",
-    "IMGpath": "8.chocoTeppan.JPG",
+    "IMGpath": "assets/takeaway/8.chocoTeppan.JPG",
     "price": 8.90
   },
 
   {
     "id": 11,
     "nome": "Pato Teppanyaki",
-    "IMGpath": "9.patoTeppan.JPG",
+    "IMGpath": "assets/takeaway/9.patoTeppan.JPG",
     "price": 9.90
   },
 
   {
     "id": 13,
     "nome": "Gambas Teppanyaki",
-    "IMGpath": "11.gambasTeppan.JPG",
+    "IMGpath": "assets/takeaway/11.gambasTeppan.JPG",
     "price": 9.90
   },
 
   {
     "id": 14,
     "nome": "Frango Teppanyaki",
-    "IMGpath": "12.frangoTeppan.JPG",
+    "IMGpath": "assets/takeaway/12.frangoTeppan.JPG",
     "price": 8.90
   },
 
   {
     "id": 15,
     "nome": "Salmão Teppanyaki",
-    "IMGpath": "13.salmaoTeppan.JPG",
+    "IMGpath": "assets/takeaway/13.salmaoTeppan.JPG",
     "price": 8.90
   },
 
   {
     "id": 16,
     "nome": "Rolo de Vaca",
-    "IMGpath": "14.roloVaca.JPG",
+    "IMGpath": "assets/takeaway/14.roloVaca.JPG",
     "price": 8.90
   },
 
   {
     "id": 18,
     "nome": "Bife de Vaca",
-    "IMGpath": "16.vacaTeppan.JPG",
+    "IMGpath": "assets/takeaway/16.vacaTeppan.JPG",
     "price": 8.90
   },
 
   {
     "id": 19,
     "nome": "Maki Salmão",
-    "IMGpath": "17.sakeMaki.JPG",
+    "IMGpath": "assets/takeaway/17.sakeMaki.JPG",
     "price": 7.90
   },
 
   {
     "id": 20,
     "nome": "Maki Misto I",
-    "IMGpath": "18.makiMisto.JPG",
+    "IMGpath": "assets/takeaway/18.makiMisto.JPG",
     "price": 7.90
   },
 
   {
     "id": 21,
     "nome": "Maki Vegetais",
-    "IMGpath": "19.makiVeg.JPG",
+    "IMGpath": "assets/takeaway/19.makiVeg.JPG",
     "price": 7.90
   },
 
   {
     "id": 22,
     "nome": "Tempura Maki",
-    "IMGpath": "20.tempuraMaki.JPG",
+    "IMGpath": "assets/takeaway/20.tempuraMaki.JPG",
     "price": 7.90
   },
 
   {
     "id": 24,
     "nome": "Maki Misto II",
-    "IMGpath": "21.makiMisto.JPG",
+    "IMGpath": "assets/takeaway/21.makiMisto.JPG",
     "price": 7.90
   },
   {
     "id": 25,
     "nome": "Maki California",
-    "IMGpath": "22.californiaMaki.JPG",
+    "IMGpath": "assets/takeaway/22.californiaMaki.JPG",
     "price": 7.90
   },
 
   {
     "id": 26,
     "nome": "Maki Ovo",
-    "IMGpath": "maki_ovo.JPG",
+    "IMGpath": "assets/takeaway/maki_ovo.JPG",
     "price": 7.90
   },
 
   {
     "id": 27,
     "nome": "Salmão Philadelphia",
-    "IMGpath": "makiSalmaoPhiladelphia.JPG",
+    "IMGpath": "assets/takeaway/makiSalmaoPhiladelphia.JPG",
     "price": 7.90
   },
 
   {
     "id": 28,
     "nome": "Temaki Misto",
-    "IMGpath": "23.temaki.JPG",
+    "IMGpath": "assets/takeaway/23.temaki.JPG",
     "price": 7.90
   },
 
   {
     "id": 29,
     "nome": "Gunkan Sushi",
-    "IMGpath": "24.gunkanSushi.JPG",
+    "IMGpath": "assets/takeaway/24.gunkanSushi.JPG",
     "price": 7.90
   },
 
   {
     "id": 31,
     "nome": "Nigiri Misto",
-    "IMGpath": "25.nigiriMisto.JPG",
+    "IMGpath": "assets/takeaway/25.nigiriMisto.JPG",
     "price": 7.90
   },
 
   {
     "id": 32,
     "nome": "Nigiri Salmão",
-    "IMGpath": "26.salmaoNigiri.JPG",
+    "IMGpath": "assets/takeaway/26.salmaoNigiri.JPG",
     "price": 7.90
   },
 
   {
     "id": 33,
     "nome": "Aburi Sushi",
-    "IMGpath": "27.aburiSushi.JPG",
+    "IMGpath": "assets/takeaway/27.aburiSushi.JPG",
     "price": 7.90
   },
 
   {
     "id": 34,
     "nome": "Sashimi Salmão",
-    "IMGpath": "29.sashimiSalmao.JPG",
+    "IMGpath": "assets/takeaway/29.sashimiSalmao.JPG",
     "price": 7.90
   },
 
   {
     "id": 35,
     "nome": "Sashimi Misto",
-    "IMGpath": "30.sashimiMisto.JPG",
+    "IMGpath": "assets/takeaway/30.sashimiMisto.JPG",
     "price": 7.90
   },
 
   {
     "id": 36,
     "nome": "Sushi Sashimi",
-    "IMGpath": "31.sushiSashimi.JPG",
+    "IMGpath": "assets/takeaway/31.sushiSashimi.JPG",
     "price": 7.90
   },
 
   {
     "id": 37,
     "nome": "Maki Sakura I",
-    "IMGpath": "32.makiSakura.JPG",
+    "IMGpath": "assets/takeaway/32.makiSakura.JPG",
     "price": 7.90
   },
 
   {
     "id": 38,
     "nome": "Maki Sakura II",
-    "IMGpath": "33.salmaoCebolinho.JPG",
+    "IMGpath": "assets/takeaway/33.salmaoCebolinho.JPG",
     "price": 7.90
   },
 
   {
     "id": 40,
     "nome": "Sushi Misto",
-    "IMGpath": "sushiMisto.JPG",
+    "IMGpath": "assets/takeaway/sushiMisto.JPG",
     "price": 7.90
   },
 
@@ -271,96 +271,96 @@
   {
     "id": 41,
     "nome": "Maki Frito Picante",
-    "IMGpath": "36.makiFritoPicante.JPG",
+    "IMGpath": "assets/takeaway/36.makiFritoPicante.JPG",
     "price": 7.90
   },
   {
     "id": 43,
     "nome": "Tataki Salmão",
-    "IMGpath": "38.tatakiSalmao.JPG",
+    "IMGpath": "assets/takeaway/38.tatakiSalmao.JPG",
     "price": 7.90
   },
 
   {
     "id": 45,
     "nome": "Maki Frito Misto",
-    "IMGpath": "makiFritoMisto.JPG",
+    "IMGpath": "assets/takeaway/makiFritoMisto.JPG",
     "price": 7.90
   },
 
   {
     "id": 46,
     "nome": "Futumaki Frito",
-    "IMGpath": "37.futuFrito.JPG",
+    "IMGpath": "assets/takeaway/37.futuFrito.JPG",
     "price": 7.90
   },
   {
     "id": 47,
     "nome": "Sushi Braseado",
-    "IMGpath": "mixSushiBraseado.JPG",
+    "IMGpath": "assets/takeaway/mixSushiBraseado.JPG",
     "price": 7.90
   },
   {
   "id": 48,
   "nome": "Maki Salmão Frito",
-  "IMGpath": "35.makiSalmaoFrito.JPG",
+  "IMGpath": "assets/takeaway/35.makiSalmaoFrito.JPG",
     "price": 7.90
   },
   {
     "id": 50,
     "nome": "Sushi Mix (40u)",
-    "IMGpath": "sushiMix(40u).JPG",
+    "IMGpath": "assets/takeaway/sushiMix(40u).JPG",
     "price": 7.90
   },
 
   {
     "id": 51,
     "nome": "Sushi & Temaki",
-    "IMGpath": "sushiMix(40u).JPG",
+    "IMGpath": "assets/takeaway/sushiMix(40u).JPG",
     "price": 7.90
   },
 
   {
     "id": 52,
     "nome": "Gunkan Sushi",
-    "IMGpath": "gunkanSushi.JPG",
+    "IMGpath": "assets/takeaway/gunkanSushi.JPG",
     "price": 7.90
   },
 
   {
     "id": "",
     "nome": "Wakami",
-    "IMGpath": "wakami.JPG",
+    "IMGpath": "assets/takeaway/wakami.JPG",
     "price": 4.50
   },
   {
     "id": "",
     "nome": "Wasabi",
-    "IMGpath": "wasabi.JPG",
+    "IMGpath": "assets/takeaway/wasabi.JPG",
     "price": 0.65
   },
   {
     "id": "",
     "nome": "Molho de soja",
-    "IMGpath": "molhoSoja.JPG",
+    "IMGpath": "assets/takeaway/molhoSoja.JPG",
     "price": 0.65
   },
   {
     "id": "",
     "nome": "Gengibre",
-    "IMGpath": "gengibre.JPG",
+    "IMGpath": "assets/takeaway/gengibre.JPG",
     "price": 0.65
   },
   {
     "id": "",
     "nome": "Molho Teriyaki",
-    "IMGpath": "teriyaki.JPG",
+    "IMGpath": "assets/takeaway/teriyaki.JPG",
     "price": 0.65
   },
   {
     "id": "",
     "nome": "Molho Agridoce",
-    "IMGpath": "molhoAgridoce.JPG",
+    "IMGpath": "assets/takeaway/molhoAgridoce.JPG",
     "price": 0.65
   },
   {
