@@ -92,6 +92,7 @@ class takeHeroBody extends State<takeHeroScaffold> with AutomaticKeepAliveClient
                         itemGridView(snapshot, takeawayItems, 19, 28),
                         itemGridView(snapshot, takeawayItems, 47, 6),
                         itemGridView(snapshot, takeawayItems, 53, 7)
+
                       ],
                     );
                 }
@@ -143,7 +144,7 @@ class itemGridView extends StatelessWidget{
                     onTap: () {
                       showDialog(
                           context: context,
-                        builder: (_) => itemOverlay()
+                        builder: (_) => itemOverlay(imgPath: takeawayItems[index]['IMGpath'],desc: takeawayItems[index]['description'],)
                       );
                     },
                   ),
@@ -167,11 +168,15 @@ class itemGridView extends StatelessWidget{
 }
 
 class itemOverlay extends StatefulWidget {
+  String imgPath;
+  String desc;
+  itemOverlay({this.imgPath,this.desc});
+
   @override
-  State<StatefulWidget> createState() => itemOverlayState();
+  itemOverlayState createState() => itemOverlayState();
 }
 
-class itemOverlayState extends State<StatefulWidget> with SingleTickerProviderStateMixin {
+class itemOverlayState extends State<itemOverlay> with SingleTickerProviderStateMixin {
   AnimationController _controller;
   Animation<double> scaleAnimation;
 
@@ -179,10 +184,8 @@ class itemOverlayState extends State<StatefulWidget> with SingleTickerProviderSt
   void initState() {
     super.initState();
 
-    _controller =
-        AnimationController(vsync: this, duration: Duration(milliseconds: 450));
-    scaleAnimation =
-        CurvedAnimation(parent: _controller, curve: Curves.elasticInOut);
+    _controller = AnimationController(vsync: this, duration: Duration(milliseconds: 450));
+    scaleAnimation = CurvedAnimation(parent: _controller, curve: Curves.easeOutCirc);
 
     _controller.addListener(() {
       setState(() {});
@@ -199,14 +202,41 @@ class itemOverlayState extends State<StatefulWidget> with SingleTickerProviderSt
         child: ScaleTransition(
           scale: scaleAnimation,
           child: Container(
+            width: 300,
+            height: 500,
             decoration: ShapeDecoration(
                 color: Colors.white,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15.0))),
             child: Padding(
-              padding: const EdgeInsets.all(50.0),
-              child: Text("Well hello there!"),
-            ),
+              padding: EdgeInsets.only(top: 30,left: 20,right: 20,bottom: 20),
+              child: Center(
+                child: Column(
+                  children: <Widget>[
+                    Container(
+                      //height: 150,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: <Widget>[
+                          Container(
+                            child: Image.asset(widget.imgPath),
+                            height: 120,
+                            alignment: Alignment.center,
+                          ),
+                          Container(
+                            child: Text(widget.desc),
+                            margin: EdgeInsets.only(top: 15,bottom: 15,left: 15,right: 15),
+                          )
+
+                        ],
+                      ),
+                      //color: Colors.grey,
+                    )
+                  ],
+                )
+              ),
+            )
           ),
         ),
       ),

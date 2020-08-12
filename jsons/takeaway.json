@@ -3,35 +3,45 @@
     "id": 1,
     "nome": "Arroz Teppanyaki",
     "IMGpath": "assets/takeaway/0.arrozTeppanyaki.JPG",
-    "price": 2.000
+    "price": 2.000,
+    "description": "Simples e saboroso. \nArroz salteado com molho de soja, ideal para acompanhar com outros pratos quentes.",
+    "ingredients": ["Arroz","Ovos","Cenoura","Cebolinho","Molho de Soja"]
   },
 
   {
     "id": 2,
     "nome": "Sopa Miso",
     "IMGpath": "assets/takeaway/1.sopaMiso.JPG",
-    "price": 2.000
+    "price": 2.000,
+    "description":"Leve e saudável.\nUma sopa tradicional japonesa rica em minerais e vitaminas.\nFeita com pasta de miso e acompanhada com algas, tofu e cogumelos.",
+    "ingredients":["Pasta de Miso","Algas","Tofu","Cogumelos"]
   },
 
   {
     "id": 3,
     "nome": "Salada c/ Salmão Picado",
     "IMGpath": "assets/takeaway/2.saladaSalmao.JPG",
-    "price": 3.50
+    "price": 3.50,
+    "description":"Uma refrescante salada mista com salmão e manga, salpicada com o nosso vinagrete.\n Perfeita em dias quentes. ",
+    "ingredients":["Alface","Salmão","Manga","Vinagrete","Sésamo"]
   },
 
   {
     "id": 4,
     "nome": "Raviolis",
     "IMGpath": "assets/takeaway/3.raviolis.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description":"Pastéis japoneses recheados com carne de porco e legumes, cozinhados a vapor e ligeiramente fritos.\n Uma entrada adequada a qualquer palato, melhor com um toque de molho de soja",
+    "ingredients": ["Farinha","Porco","Espinafres"]
   },
 
   {
     "id": 5,
     "nome": "Massa c/ Legumes",
     "IMGpath": "assets/takeaway/massaLegumes.JPG",
-    "price": 6.90
+    "price": 6.90,
+    "description":"Massa de ovo salteada com cenoura, cebola, couve e ovos mexidos. ",
+    "ingredients":""
   },
 
   {

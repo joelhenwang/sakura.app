@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:menu/takeawayHero.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'rodizioPage.dart';
-import 'takeawayPage.dart';
 import 'contactosPage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_email_sender/flutter_email_sender.dart';
