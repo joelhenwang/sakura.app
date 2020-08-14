@@ -40,7 +40,7 @@
     "nome": "Massa c/ Legumes",
     "IMGpath": "assets/takeaway/massaLegumes.JPG",
     "price": 6.90,
-    "description":"Massa de ovo salteada em molho de soja com cenoura, cebola, couve e ovos mexidos. ",
+    "description":"Massa de ovo salteada em molho de soja com cenoura, cebola, couve e ovos mexidos.",
     "ingredients":["Farinha","Molho de Soja","Ovos","Cenoura","Cebola","Couve"]
   },
 
@@ -85,21 +85,26 @@
     "nome": "Panado de Frango",
     "IMGpath": "assets/takeaway/10.panadoFrango.JPG",
     "price": 7.90,
-    "description": "Semelhante ao Tonkatsu, esta versão ligeiramente mais magra ira lhe agradar se gosta de panados de porco"
+    "description": "Semelhante ao Tonkatsu, esta versão ligeiramente mais magra irá certamente lhe agradar se gosta de panados de porco",
+    "ingredients": ["Frango","Panko","Molho de Teriyaki","Sementes de Sésamo"]
   },
 
   {
     "id": 66,
     "nome": "Gambas Croquete",
     "IMGpath": "assets/takeaway/42.gambasCroquete.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "",
+    "ingredients": ["Gambas","Farinha"]
   },
 
   {
     "id": 67,
     "nome": "Massa c/ Gambas",
     "IMGpath": "assets/takeaway/massaGambas.JPG",
-    "price": 9.90
+    "price": 9.90,
+    "description": "Massa de ovo salteada em molho de soja com gambas, cenoura, cebola, couve e ovos mexidos." ,
+    "ingredients": ["Farinha","Gambas","Molho de Soja","Ovos","Cenoura","Cebola","Couve"]
   },
 
 
@@ -109,181 +114,233 @@
     "id": 10,
     "nome": "Choco Teppanyaki",
     "IMGpath": "assets/takeaway/8.chocoTeppan.JPG",
-    "price": 8.90
+    "price": 8.90,
+    "description": "Pedaços de chocos laminados grelhados na chapa com manteiga, limão e molho de soja.",
+    "ingredients": ["Choco","Manteiga","Limão","Molho de Sojaa"]
   },
 
   {
     "id": 11,
     "nome": "Pato Teppanyaki",
     "IMGpath": "assets/takeaway/9.patoTeppan.JPG",
-    "price": 9.90
+    "price": 9.90,
+    "description": "Pedaços de pato grelhados na chapa com molho de Teriyaki e finalizado com sementes de sésamo.",
+    "ingredients": ["Pato","Molho de Teriyaki","Sementes de Sésamo"]
   },
 
   {
     "id": 13,
     "nome": "Gambas Teppanyaki",
     "IMGpath": "assets/takeaway/11.gambasTeppan.JPG",
-    "price": 9.90
+    "price": 9.90,
+    "description": "Gambas grelhadas na chapa com manteiga, limão e molho de soja.",
+    "ingredients": ["Gambas","Manteiga","Limão","Molho de Soja"]
   },
 
   {
     "id": 14,
     "nome": "Frango Teppanyaki",
     "IMGpath": "assets/takeaway/12.frangoTeppan.JPG",
-    "price": 8.90
+    "price": 8.90,
+    "description": "Peito de frango grelhado na chapa com molho de teriyaki finalizado com sementes de sésamo.",
+    "ingredients": ["Frango","Molho de Teriyaki","Sementes de Sésamo"]
   },
 
   {
     "id": 15,
     "nome": "Salmão Teppanyaki",
     "IMGpath": "assets/takeaway/13.salmaoTeppan.JPG",
-    "price": 8.90
+    "price": 8.90,
+    "description": "Salmão grelhado na chapa com manteiga, limão e molho de soja.",
+    "ingredients": ["Salmão","Manteiga","Limão","Molho de Soja"]
   },
 
   {
     "id": 16,
     "nome": "Rolo de Vaca",
     "IMGpath": "assets/takeaway/14.roloVaca.JPG",
-    "price": 8.90
+    "price": 8.90,
+    "description": "Conjunto de legumes enrolados em lâminas de de carne de vaca grelhados na chapa com molho de soja.",
+    "ingredients": ["Vaca","Rebentos de Soja","Cenoura"]
   },
 
   {
     "id": 18,
     "nome": "Bife de Vaca",
     "IMGpath": "assets/takeaway/16.vacaTeppan.JPG",
-    "price": 8.90
+    "price": 8.90,
+    "description": "Bife de vaca grelhado na chapa com manteiga, molho de soja e cebola frita.",
+    "ingredients": ["Vaca","Manteiga","Molho de Soja","Cebola Frita"]
   },
 
   {
     "id": 19,
     "nome": "Maki Salmão",
     "IMGpath": "assets/takeaway/17.sakeMaki.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Salmão fresco enrolado em arroz de sushi e no fim envolvidos em nori.",
+    "ingredients": ["Salmão","Arroz de sushi","Nori"]
   },
 
   {
     "id": 20,
     "nome": "Maki Misto I",
     "IMGpath": "assets/takeaway/18.makiMisto.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Salmão/Atum/Abacate enrolado em arroz de sushi e no fim envolvidos em nori.",
+    "ingredients": ["Salmão","Atum","Abacate","Arroz de sushi","Nori"]
   },
 
   {
     "id": 21,
     "nome": "Maki Vegetais",
     "IMGpath": "assets/takeaway/19.makiVeg.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Abacate/Manga/Pepino envolvidos em arroz de sushi e no fim enrolados em nori.",
+    "ingredients": ["Abacate","Manga","Pepino","Arroz de sushi","Nori"]
   },
 
   {
     "id": 22,
     "nome": "Tempura Maki",
     "IMGpath": "assets/takeaway/20.tempuraMaki.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Tempura de gamba envolvidos em nori, enrolados com arroz de sushi por fora e no fim salpicados com pedaços crocantes de tempura.",
+    "ingredients": ["Gambas","Arroz de sushi","Nori","Tempura"]
   },
 
   {
     "id": 24,
     "nome": "Maki Misto II",
     "IMGpath": "assets/takeaway/21.makiMisto.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Conjunto de vários tipos de rolos de sushi, consistido por maki salmão, maki califórnia e maki salmão philadelphia.",
+    "ingredients": []
   },
   {
     "id": 25,
     "nome": "Maki California",
     "IMGpath": "assets/takeaway/22.californiaMaki.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Salmão fresco e abacate envolvidos em nori e no fim enrolados em arroz de sushi e ovas de salmão.",
+    "ingredients": ["Salmão","Abacate","Arroz de sushi","Nori","Ovas de salmão"]
   },
 
   {
     "id": 26,
     "nome": "Maki Ovo",
     "IMGpath": "assets/takeaway/maki_ovo.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Salmão fresco e abacate envolvidos em arroz de sushi e no fim enrolados em ovos mexidos.",
+    "ingredients": ["Salmão","Abacate","arroz de sushi","Ovos"]
   },
 
   {
     "id": 27,
     "nome": "Salmão Philadelphia",
     "IMGpath": "assets/takeaway/makiSalmaoPhiladelphia.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Salmão fresco e abacate envolvidos em nori e philadelphia e no fim enrolados em arroz de sushi e salmãp",
+    "ingredients": ["Salmão","Abacate","Philadelphia","Arroz de sushi","Nori"]
   },
 
   {
     "id": 28,
     "nome": "Temaki Misto",
     "IMGpath": "assets/takeaway/23.temaki.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Cones de sushi em que consistem em peixe fresco ou legumes enrolados em arroz de sushi e nori.",
+    "ingredients": ["Peixe/Legumes","Arroz de sushi","Nori"]
   },
 
   {
     "id": 29,
     "nome": "Gunkan Sushi",
     "IMGpath": "assets/takeaway/24.gunkanSushi.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Também conhecidos como pequenos 'barcos' de sushi. Consiste em arroz de sushi envolvido em nori finalizado com diferentes toppings.",
+    "ingredients": ["Peixe/Legumes","Arroz de sushi","Nori"]
   },
 
   {
     "id": 31,
     "nome": "Nigiri Misto",
     "IMGpath": "assets/takeaway/25.nigiriMisto.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Forma clássica de sushi.\nArroz de sushi com uma fatia de peixe ou gambas por cima.",
+    "ingredients": ["Salmão","Atum","Robalo","Arroz de sushi"]
   },
 
   {
     "id": 32,
     "nome": "Nigiri Salmão",
     "IMGpath": "assets/takeaway/26.salmaoNigiri.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Forma clássica de sushi.\nArroz de sushi com uma fatia de salmão por cima",
+    "ingredients": ["Salmão","Arroz de sushi"]
   },
 
   {
     "id": 33,
     "nome": "Aburi Sushi",
     "IMGpath": "assets/takeaway/27.aburiSushi.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Semelhante ao nigiri mas ligeiramente braseado por cima para dar um toque quente ao sushi.",
+    "ingredients": ["Salmão","Arroz de sushi"]
   },
 
   {
     "id": 34,
     "nome": "Sashimi Salmão",
     "IMGpath": "assets/takeaway/29.sashimiSalmao.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Salmão fresco cortado em fátias, simples e fácil de consumir.",
+    "ingredients": ["Salmão"]
   },
 
   {
     "id": 35,
     "nome": "Sashimi Misto",
     "IMGpath": "assets/takeaway/30.sashimiMisto.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Vários tipos de peixes cortados em fátias, simples e fáceis de consumir.",
+    "ingredients": ["Salmão","Atum","Robalo","Peixe de manteiga"]
   },
 
   {
     "id": 36,
     "nome": "Sushi Sashimi",
     "IMGpath": "assets/takeaway/31.sushiSashimi.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Conjunto de vários tipos de sushi. Consiste em peças de nigiri, sashimi, maki sushi e califórnia maki.",
+    "ingredients": ["Salmão","Atum","Robalo","Arroz de sushi","Nori","Sementes de Sésamo"]
   },
 
   {
     "id": 37,
     "nome": "Maki Sakura I",
     "IMGpath": "assets/takeaway/32.makiSakura.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Salmão e abacate envolvido em nori e arroz de sushi com uma fatia de salmão braseado por cima com maionese e cebola frita.",
+    "ingredients": ["Salmão","Abacate","Maionese","Cebola frita","Arroz de sushi","Nori"]
   },
 
   {
     "id": 38,
     "nome": "Maki Sakura II",
     "IMGpath": "assets/takeaway/33.salmaoCebolinho.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Salmão e abacate envolvidos em nori e arroz de sushi com salmão picado por cima e sementes de sésamo.",
+    "ingredients": ["Salmão","Abacate","Arroz de sushi","Sementes de Sésamo","Nori"]
   },
 
   {
     "id": 40,
     "nome": "Sushi Misto",
     "IMGpath": "assets/takeaway/sushiMisto.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Conjunto de vários tipos de sushi. Consiste em nigiri, maki sushi, ",
+    "ingredients": []
   },
 
 
