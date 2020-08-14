@@ -4,7 +4,7 @@
     "nome": "Arroz Teppanyaki",
     "IMGpath": "assets/takeaway/0.arrozTeppanyaki.JPG",
     "price": 2.000,
-    "description": "Simples e saboroso. \nArroz salteado com molho de soja, ideal para acompanhar com outros pratos quentes.",
+    "description": "Simples e saboroso.\nArroz salteado com molho de soja, ideal para acompanhar com outros pratos quentes.",
     "ingredients": ["Arroz","Ovos","Cenoura","Cebolinho","Molho de Soja"]
   },
 
@@ -13,7 +13,7 @@
     "nome": "Sopa Miso",
     "IMGpath": "assets/takeaway/1.sopaMiso.JPG",
     "price": 2.000,
-    "description":"Leve e saudável.\nUma sopa tradicional japonesa rica em minerais e vitaminas.\nFeita com pasta de miso e acompanhada com algas, tofu e cogumelos.",
+    "description":"Leve e saudável.\nUma sopa tradicional japonesa feita com pasta de miso e acompanhada com algas, tofu e cogumelos.",
     "ingredients":["Pasta de Miso","Algas","Tofu","Cogumelos"]
   },
 
@@ -22,7 +22,7 @@
     "nome": "Salada c/ Salmão Picado",
     "IMGpath": "assets/takeaway/2.saladaSalmao.JPG",
     "price": 3.50,
-    "description":"Uma refrescante salada mista com salmão e manga, salpicada com o nosso vinagrete.\n Perfeita em dias quentes. ",
+    "description":"Uma refrescante salada mista com salmão e manga, salpicada com o nosso vinagrete de maionese.\nPerfeita em dias quentes. ",
     "ingredients":["Alface","Salmão","Manga","Vinagrete","Sésamo"]
   },
 
@@ -31,7 +31,7 @@
     "nome": "Raviolis",
     "IMGpath": "assets/takeaway/3.raviolis.JPG",
     "price": 7.90,
-    "description":"Pastéis japoneses recheados com carne de porco e legumes, cozinhados a vapor e ligeiramente fritos.\n Uma entrada adequada a qualquer palato, melhor com um toque de molho de soja",
+    "description":"Pastéis japoneses recheados com carne de porco e legumes, cozinhados a vapor e ligeiramente fritos.",
     "ingredients": ["Farinha","Porco","Espinafres"]
   },
 
@@ -40,43 +40,52 @@
     "nome": "Massa c/ Legumes",
     "IMGpath": "assets/takeaway/massaLegumes.JPG",
     "price": 6.90,
-    "description":"Massa de ovo salteada com cenoura, cebola, couve e ovos mexidos. ",
-    "ingredients":""
+    "description":"Massa de ovo salteada em molho de soja com cenoura, cebola, couve e ovos mexidos. ",
+    "ingredients":["Farinha","Molho de Soja","Ovos","Cenoura","Cebola","Couve"]
   },
 
   {
     "id": 6,
     "nome": "Mini Crepes",
     "IMGpath": "assets/takeaway/4.miniCrepes.JPG",
-    "price": 4.00
+    "price": 4.00,
+    "description":"Clássico da gastronimia.\nCrepes fritos crocantes recheados com legumes.",
+    "ingredients": ["Farinha","Rebentos","Cenoura"]
   },
 
   {
     "id": 7,
     "nome": "Espetadas de Frango",
     "IMGpath": "assets/takeaway/5.espetadasFrango.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description":"Espetadas de frango grelhados na chapa, salpicados com molho de teriyaki.",
+    "ingredients": ["Frango","Pimentos","Sementes de Sésamo","Molho de Teriyaki"]
   },
 
   {
     "id": 8,
     "nome": "Panado de Porco",
     "IMGpath": "assets/takeaway/6.panadoPorco.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description":"Costeletas de porco panados, tradicionalmente conhecidos como 'Tonkatsu', são fritos envolvidos em 'panko'",
+    "ingredients": ["Porco","Panko","Molho de Teriyaki","Sementes de Sésamo"]
   },
 
   {
     "id": 9,
     "nome": "Tempura de Gambas",
     "IMGpath": "assets/takeaway/7.tempuraGambas.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description":"Gambas fritas, previamentes mergulhadas em massa de tempura.\nUm dos vários clássicos crocantes da gastronomia japonesa.",
+    "ingredients": ["Gambas","Farinha","Ovos"]
   },
 
   {
     "id": 12,
     "nome": "Panado de Frango",
     "IMGpath": "assets/takeaway/10.panadoFrango.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Semelhante ao Tonkatsu, esta versão ligeiramente mais magra ira lhe agradar se gosta de panados de porco"
   },
 
   {

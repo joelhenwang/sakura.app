@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:transparent_image/transparent_image.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
+import 'package:flutter_markdown/flutter_markdown.dart';
 
 
 class takeHeroScaffold extends StatefulWidget {
@@ -144,7 +145,7 @@ class itemGridView extends StatelessWidget{
                     onTap: () {
                       showDialog(
                           context: context,
-                        builder: (_) => itemOverlay(imgPath: takeawayItems[index]['IMGpath'],desc: takeawayItems[index]['description'],)
+                        builder: (_) => itemOverlay(title:takeawayItems[index]["nome"],imgPath: takeawayItems[index]['IMGpath'],desc: takeawayItems[index]['description'],ingredients_data: takeawayItems[index]['ingredients'],)
                       );
                     },
                   ),
@@ -170,7 +171,9 @@ class itemGridView extends StatelessWidget{
 class itemOverlay extends StatefulWidget {
   String imgPath;
   String desc;
-  itemOverlay({this.imgPath,this.desc});
+  String title;
+  List<dynamic> ingredients_data;
+  itemOverlay({this.title,this.imgPath,this.desc,this.ingredients_data});
 
   @override
   itemOverlayState createState() => itemOverlayState();
@@ -197,52 +200,99 @@ class itemOverlayState extends State<itemOverlay> with SingleTickerProviderState
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Material(
-        color: Colors.transparent,
-        child: ScaleTransition(
-          scale: scaleAnimation,
-          child: Container(
-            width: 300,
-            height: 500,
-            decoration: ShapeDecoration(
-                color: Colors.white,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15.0))),
-            child: Padding(
-              padding: EdgeInsets.only(top: 30,left: 20,right: 20,bottom: 20),
-              child: Center(
-                child: Column(
-                  children: <Widget>[
-                    Container(
-                      //height: 150,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: <Widget>[
-                          Container(
-                            child: Image.asset(widget.imgPath),
-                            height: 120,
-                            alignment: Alignment.center,
-                          ),
-                          Container(
-                            child: Text(widget.desc),
-                            margin: EdgeInsets.only(top: 15,bottom: 15,left: 15,right: 15),
-                          )
-
-                        ],
+        child: Material(
+          color: Colors.transparent,
+          child: ScaleTransition(
+            scale: scaleAnimation,
+            child: Container(
+              width: 300,
+              height: 425,
+              color: Colors.transparent,
+              child: Stack(
+                  overflow: Overflow.visible,
+                  alignment: Alignment.center,
+                  children: [
+                    Positioned(
+                      bottom: 0,
+                      child: Container(
+                        height: 350,
+                        width: 300,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          color: Colors.white,
+                          boxShadow: [BoxShadow(color: Color.fromARGB(255, 75, 75, 75), spreadRadius: 1,blurRadius: 18 ,offset: Offset(0,6))]
+                        ),
                       ),
-                      //color: Colors.grey,
-                    )
+                    ),
+                    Positioned(
+                      top: 0,
+                      child: Container(
+                        height: 120,
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(10),
+                          child: Image.asset(widget.imgPath),
+                        ),
+                        decoration: BoxDecoration(
+                          boxShadow: [BoxShadow(color: Colors.grey, spreadRadius: 0.1,blurRadius: 10 ,offset: Offset(0,4))]
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      top: 135,
+                      child: Text(widget.title,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                    ),
+                    Positioned(
+                      top:160,
+                      child: Container(
+                        margin: EdgeInsets.all(10),
+                        width: 250,
+                        decoration: BoxDecoration(
+                          color: Color.fromARGB(200, 255, 150, 190),
+                          borderRadius: BorderRadius.circular(10),
+                          //boxShadow: [BoxShadow(color: Colors.grey, spreadRadius: 1, blurRadius: 10, offset: Offset(0,5))],
+                        ),
+                        child: Padding(
+                          padding: EdgeInsets.all(11),
+                          child: Text(widget.desc,style: TextStyle(fontSize: 12,color: Colors.white,fontWeight: FontWeight.bold)),
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      top:250,
+                      child: Container(
+                        margin: EdgeInsets.all(10),
+                        width: 250,
+                        decoration: BoxDecoration(
+                          color: Color.fromARGB(155, 75, 200, 100),
+                          borderRadius: BorderRadius.circular(10),
+                          //boxShadow: [BoxShadow(color: Colors.grey, spreadRadius: 1, blurRadius: 10, offset: Offset(0,5))],
+                        ),
+                        child: Padding(
+                          padding: EdgeInsets.all(10),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(' Ingredientes:',style: TextStyle(fontSize: 14,color: Colors.white,fontWeight: FontWeight.bold)),
+                              ListView.builder(
+                                scrollDirection: Axis.vertical,
+                                shrinkWrap: true,
+                                itemCount: widget.ingredients_data.length,
+                                itemBuilder: (context, index){
+                                  return Text('- '+widget.ingredients_data[index],style: TextStyle(fontSize: 13,color: Colors.white),);
+                                },
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
-                )
-              ),
-            )
+                ),
+            ),
           ),
-        ),
-      ),
+        )
     );
   }
-
 }
 
 class restHeader extends StatelessWidget{
@@ -265,25 +315,23 @@ class restHeader extends StatelessWidget{
             fit: StackFit.expand,
             alignment: Alignment.center,
               children: [
+
                 FadeInImage(
                   placeholder: MemoryImage(kTransparentImage),
                   image: Image.asset(imgPath,
-                    //fit: BoxFit.cover,
-                    //height: 200,
-                    //width: double.infinity,
                     alignment: Alignment.center,
-                    //scale: 2,
                   ).image,
                   fadeInDuration: Duration(milliseconds: 250),
                   fit: BoxFit.fitHeight,
                   height: 210,
                   alignment: Alignment.center,
-
                 ),
+
                 Container(
                   alignment:Alignment.center,
                   color: Colors.black26,
                 ),
+
                 Column(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: <Widget>[
