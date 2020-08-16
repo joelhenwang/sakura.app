@@ -215,7 +215,7 @@
     "IMGpath": "assets/takeaway/21.makiMisto.JPG",
     "price": 7.90,
     "description": "Conjunto de vários tipos de rolos de sushi, consistido por maki salmão, maki califórnia e maki salmão philadelphia.",
-    "ingredients": []
+    "ingredients": ["Salmão","Abacate","Arroz de sushi","Nori"]
   },
   {
     "id": 25,
@@ -339,8 +339,8 @@
     "nome": "Sushi Misto",
     "IMGpath": "assets/takeaway/sushiMisto.JPG",
     "price": 7.90,
-    "description": "Conjunto de vários tipos de sushi. Consiste em nigiri, maki sushi, ",
-    "ingredients": []
+    "description": "Conjunto de vários tipos de sushi. Consiste em nigiri, maki sushi, maki sakura e gunkan sushi.",
+    "ingredients": ["Salmão","Atum","Ovas","Arroz de sushi","Nori","Sementes de Sésamo"]
   },
 
 
@@ -348,96 +348,128 @@
     "id": 41,
     "nome": "Maki Frito Picante",
     "IMGpath": "assets/takeaway/36.makiFritoPicante.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Salmão e abacate envolvidos em nori e arroz de sushi, fritos, finalizado com maionese e chili em pó",
+    "ingredients": ["Salmão","Abacate","Arroz de sushi","Nori","Maionese","Chili em pó"]
   },
   {
     "id": 43,
     "nome": "Tataki Salmão",
     "IMGpath": "assets/takeaway/38.tatakiSalmao.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Semelhante ao sashimi de salmão, mas no fim braseado e salpicado com chili em pó.",
+    "ingredients": ["Salmão","Chili em pó"]
   },
 
   {
     "id": 45,
     "nome": "Maki Frito Misto",
     "IMGpath": "assets/takeaway/makiFritoMisto.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Conjunto de vários tipos de maki sushi fritos, consiste em maki salmão frito, maki frito picante e tempura maki.",
+    "ingredients": ["Salmão","Gambas","Abacate","Tempura","Arroz de Sushi","Nori"]
   },
 
   {
     "id": 46,
     "nome": "Futumaki Frito",
     "IMGpath": "assets/takeaway/37.futuFrito.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "",
+    "ingredients": []
   },
   {
     "id": 47,
     "nome": "Sushi Braseado",
     "IMGpath": "assets/takeaway/mixSushiBraseado.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Conjunto de vários tipos de sushi braseado, consistem em maki sakura, aburi sushi e tatakis.",
+    "ingredients": ["Salmão","Robalo","Atum","Abacate","Arroz de sushi","Nori","Maionese","Cebola frita"]
   },
   {
-  "id": 48,
-  "nome": "Maki Salmão Frito",
-  "IMGpath": "assets/takeaway/35.makiSalmaoFrito.JPG",
-    "price": 7.90
+    "id": 48,
+    "nome": "Maki Salmão Frito",
+    "IMGpath": "assets/takeaway/35.makiSalmaoFrito.JPG",
+    "price": 7.90,
+    "description": "Salmão envolviod em arroz de sushi e nori e no fim frito na frigideira.",
+    "ingredients": ["Salmão","Arroz de sushi","Nori"]
   },
   {
     "id": 50,
     "nome": "Sushi Mix (40u)",
     "IMGpath": "assets/takeaway/sushiMix(40u).JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Conjunto de vários tipos de sushi, consiste em nigiris, maki califórnia, gunkan sushi, maki ovo/salmão/atum.",
+    "ingredients": ["Salmão","Atum","Robalo","Gambas","Abacate","Ovos","Ovas de peixe","Arroz de sushi"]
   },
 
   {
     "id": 51,
     "nome": "Sushi & Temaki",
-    "IMGpath": "assets/takeaway/sushiMix(40u).JPG",
-    "price": 7.90
+    "IMGpath": "assets/takeaway/sushiTemaki.JPG",
+    "price": 7.90,
+    "description": "Conjunto de vários tipos de sushi, consiste em maki sushi, maki califórnia, gunkan sushi e um temaki.",
+    "ingredients": ["Salmão","Abacate","Ovas de salmão","Arroz de sushi","Nori"]
   },
 
   {
     "id": 52,
     "nome": "Gunkan Sushi",
     "IMGpath": "assets/takeaway/gunkanSushi.JPG",
-    "price": 7.90
+    "price": 7.90,
+    "description": "Também conhecidos como pequenos 'barcos' de sushi. Consiste em arroz de sushi envolvido em nori finalizado com diferentes toppings.",
+    "ingredients": ["Salmão","Philadelphia","Ovas de peixe","Arroz de sushi"]
   },
 
   {
     "id": "",
     "nome": "Wakami",
     "IMGpath": "assets/takeaway/wakami.JPG",
-    "price": 4.50
+    "price": 4.50,
+    "description": "Algas marinadas em molho de sésamo. Refrescante, leve e crocante.",
+    "ingredients": ["Algas","Óleo de Sésamo","Sementes de Sésamo"]
   },
   {
     "id": "",
     "nome": "Wasabi",
     "IMGpath": "assets/takeaway/wasabi.JPG",
-    "price": 0.65
+    "price": 0.65,
+    "description": "Especiaria tradicional japonesa. Deriva do rábano japonês 'Wasabia' com um sabor semelhante à mostarda dijon. (Feito com pó de wasabi)",
+    "ingredients": ["Pó de wasabi"]
   },
+
   {
     "id": "",
     "nome": "Molho de soja",
     "IMGpath": "assets/takeaway/molhoSoja.JPG",
-    "price": 0.65
+    "price": 0.65,
+    "description": "Molho tradicional na culinária asiática, feita a partir de soja fermentada. Com um sabor salgado e doce é ideal para condizer com qualquer tipo de sushi.",
+    "ingredients": ["Soja","Trigo"]
   },
   {
     "id": "",
     "nome": "Gengibre",
     "IMGpath": "assets/takeaway/gengibre.JPG",
-    "price": 0.65
+    "price": 0.65,
+    "description": "Láminas de pickles de gengibre, normalmente consumidos antes e após de refeições para limpar o palato.",
+    "ingredients": ["Gengibre","Vinagre de arroz","Açucar"]
   },
   {
     "id": "",
     "nome": "Molho Teriyaki",
     "IMGpath": "assets/takeaway/teriyaki.JPG",
-    "price": 0.65
+    "price": 0.65,
+    "description": "Molho tradicional japonês. Feito com molho de soja e mel, ideal para condizer com carnes brancas ou se simplesmente deseja dar algo doce ao seu palato.",
+    "ingredients": ["Molho de soja","Açucar mascavo","Mel","Mirin (sake culinário)"]
   },
+
   {
     "id": "",
     "nome": "Molho Agridoce",
     "IMGpath": "assets/takeaway/molhoAgridoce.JPG",
-    "price": 0.65
+    "price": 0.65,
+    "description": "",
+    "ingredients": []
   },
   {
     "id": "",

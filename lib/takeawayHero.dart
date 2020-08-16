@@ -88,11 +88,11 @@ class takeHeroBody extends State<takeHeroScaffold> with AutomaticKeepAliveClient
                     return TabBarView(
                       children: <Widget>[
 
-                        itemGridView(snapshot, takeawayItems, 0, 12),
-                        itemGridView(snapshot, takeawayItems, 12, 7),
-                        itemGridView(snapshot, takeawayItems, 19, 28),
-                        itemGridView(snapshot, takeawayItems, 47, 6),
-                        itemGridView(snapshot, takeawayItems, 53, 7)
+                        itemGridView(snapshot, takeawayItems, 0, 12,true),
+                        itemGridView(snapshot, takeawayItems, 12, 7,true),
+                        itemGridView(snapshot, takeawayItems, 19, 28,true),
+                        itemGridView(snapshot, takeawayItems, 47, 6,true),
+                        itemGridView(snapshot, takeawayItems, 53, 7,false)
 
                       ],
                     );
@@ -111,7 +111,8 @@ class itemGridView extends StatelessWidget{
   var takeawayItems;
   int sum_items;
   int num_items;
-  itemGridView(this.snapshot,this.takeawayItems,this.sum_items,this.num_items);
+  bool show_desc;
+  itemGridView(this.snapshot,this.takeawayItems,this.sum_items,this.num_items,this.show_desc);
 
   @override
   Widget build(BuildContext context) {
@@ -143,10 +144,10 @@ class itemGridView extends StatelessWidget{
                         )
                     ),
                     onTap: () {
-                      showDialog(
+                      if(show_desc){showDialog(
                           context: context,
                         builder: (_) => itemOverlay(title:takeawayItems[index]["nome"],imgPath: takeawayItems[index]['IMGpath'],desc: takeawayItems[index]['description'],ingredients_data: takeawayItems[index]['ingredients'],)
-                      );
+                      );}
                     },
                   ),
                 ),
