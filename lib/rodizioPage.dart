@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:transparent_image/transparent_image.dart';
 import 'ementa.dart';
-import 'cartaBebidas.dart';
+import 'cartaBebidas2.dart';
 
 class rodizioScaffold extends StatefulWidget {
 

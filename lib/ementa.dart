@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:photo_view/photo_view.dart';
 import 'package:transparent_image/transparent_image.dart';
-import 'package:preload_page_view/preload_page_view.dart';
+import 'package:photo_view/photo_view_gallery.dart';
 
 class ementaScaffold extends StatefulWidget {
 
@@ -11,7 +12,7 @@ class ementaScaffold extends StatefulWidget {
 
 class ementaBody extends State<ementaScaffold>{
   String categoria = 'Combinados';
-  PreloadPageController _pageController;
+  PageController _pageController;
   Image combinados;
   Image nigiri1;
   Image nigiri2;
@@ -54,7 +55,7 @@ class ementaBody extends State<ementaScaffold>{
     teppan2 = Image.asset('assets/Rodizio/14.Teppan_Yaki.png');
     especial = Image.asset('assets/Rodizio/15.Especial_Jantar.png');
     sobremesa = Image.asset('assets/Rodizio/16.Sobremesas.png');
-    _pageController = PreloadPageController();
+    _pageController = PageController();
   }
 
   @override
@@ -79,15 +80,14 @@ class ementaBody extends State<ementaScaffold>{
             height: MediaQuery.of(context).size.height * 0.8,
             width: MediaQuery.of(context).size.width,
             color: Colors.black,
-            child: PreloadPageView(
-              preloadPagesCount: 3,
-              controller: _pageController,
+            child: PhotoViewGallery(
+              pageController: _pageController,
               onPageChanged: (page){
                 setState(() {
                   categoria = categories2[page];
                 });
               },
-              children: _buildPages()
+              pageOptions: _buildPages(),
             )
           ),
           Expanded(
@@ -144,132 +144,90 @@ class ementaBody extends State<ementaScaffold>{
   }
 }
 
-List<Widget> _buildPages(){
+List<PhotoViewGalleryPageOptions> _buildPages(){
   return[
-    Container(
-      child: FadeInImage(
-        placeholder: MemoryImage(kTransparentImage),
-        image: Image.asset('assets/Rodizio/1.Combinados.png').image,
-        fadeInDuration: Duration(milliseconds: 100),
-      ),
+    PhotoViewGalleryPageOptions(
+      imageProvider: AssetImage('assets/Rodizio/1.Combinados.png'),
+      minScale: PhotoViewComputedScale.contained * 1,
+      maxScale: PhotoViewComputedScale.contained * 2,
     ),
-    Container(
-      child: FadeInImage(
-          placeholder: MemoryImage(kTransparentImage),
-          image:Image.asset('assets/Rodizio/2.Nigiri_Sushi.png').image,
-
-          fadeInDuration: Duration(milliseconds: 100),
-      )//,
+    PhotoViewGalleryPageOptions(
+      imageProvider: AssetImage('assets/Rodizio/2.Nigiri_Sushi.png'),
+      minScale: PhotoViewComputedScale.contained * 1,
+      maxScale: PhotoViewComputedScale.contained * 2,
     ),
-    Container(
-      child: FadeInImage(
-        placeholder: MemoryImage(kTransparentImage),
-        image:Image.asset('assets/Rodizio/3.Nigiri_sushi.png').image,
-        fadeInDuration: Duration(milliseconds: 100),
-      )//,
+    PhotoViewGalleryPageOptions(
+      imageProvider: AssetImage('assets/Rodizio/3.Nigiri_sushi.png'),
+      minScale: PhotoViewComputedScale.contained * 1,
+      maxScale: PhotoViewComputedScale.contained * 2,
+    ),PhotoViewGalleryPageOptions(
+      imageProvider: AssetImage('assets/Rodizio/4.Gunkan_Sushi.png'),
+      minScale: PhotoViewComputedScale.contained * 1,
+      maxScale: PhotoViewComputedScale.contained * 2,
     ),
-    Container(
-      child: FadeInImage(
-        placeholder: MemoryImage(kTransparentImage),
-        image:Image.asset('assets/Rodizio/4.Gunkan_Sushi.png').image,
-        fadeInDuration: Duration(milliseconds: 100),
-      )
+    PhotoViewGalleryPageOptions(
+      imageProvider: AssetImage('assets/Rodizio/5.Sashimi.png'),
+      minScale: PhotoViewComputedScale.contained * 1,
+      maxScale: PhotoViewComputedScale.contained * 2,
+    ),PhotoViewGalleryPageOptions(
+      imageProvider: AssetImage('assets/Rodizio/6.Temaki.png'),
+      minScale: PhotoViewComputedScale.contained * 1,
+      maxScale: PhotoViewComputedScale.contained * 2,
     ),
-    Container(
-      child: FadeInImage(
-        placeholder: MemoryImage(kTransparentImage),
-        image:Image.asset('assets/Rodizio/5.Sashimi.png').image,
-        fadeInDuration: Duration(milliseconds: 100),
-  )
+    PhotoViewGalleryPageOptions(
+      imageProvider: AssetImage('assets/Rodizio/7.California_maki.png'),
+      minScale: PhotoViewComputedScale.contained * 1,
+      maxScale: PhotoViewComputedScale.contained * 2,
     ),
-    Container(
-      child: FadeInImage(
-        placeholder: MemoryImage(kTransparentImage),
-        image:Image.asset('assets/Rodizio/6.Temaki.png').image,
-        fadeInDuration: Duration(milliseconds: 100),
-  )
+    PhotoViewGalleryPageOptions(
+      imageProvider: AssetImage('assets/Rodizio/8.Uramaki.png'),
+      minScale: PhotoViewComputedScale.contained * 1,
+      maxScale: PhotoViewComputedScale.contained * 2,
     ),
-    Container(
-      child: FadeInImage(
-        placeholder: MemoryImage(kTransparentImage),
-        image:Image.asset('assets/Rodizio/7.California_maki.png').image,
-        fadeInDuration: Duration(milliseconds: 100),
-  )
-      ,
+    PhotoViewGalleryPageOptions(
+      imageProvider: AssetImage('assets/Rodizio/9.Braseados.png'),
+      minScale: PhotoViewComputedScale.contained * 1,
+      maxScale: PhotoViewComputedScale.contained * 2,
     ),
-    Container(
-      child: FadeInImage(
-        placeholder: MemoryImage(kTransparentImage),
-        image:Image.asset('assets/Rodizio/8.Uramaki.png').image,
-        fadeInDuration: Duration(milliseconds: 100),
-  )
+    PhotoViewGalleryPageOptions(
+      imageProvider: AssetImage('assets/Rodizio/10.Hot_Sushi.png'),
+      minScale: PhotoViewComputedScale.contained * 1,
+      maxScale: PhotoViewComputedScale.contained * 2,
     ),
-    Container(
-      child: FadeInImage(
-        placeholder: MemoryImage(kTransparentImage),
-        image:Image.asset('assets/Rodizio/9.Braseados.png').image,
-        fadeInDuration: Duration(milliseconds: 100),
-  )
+    PhotoViewGalleryPageOptions(
+      imageProvider: AssetImage('assets/Rodizio/11.Couvert.png'),
+      minScale: PhotoViewComputedScale.contained * 1,
+      maxScale: PhotoViewComputedScale.contained * 2,
     ),
-    Container(
-      child: FadeInImage(
-        placeholder: MemoryImage(kTransparentImage),
-        image:Image.asset('assets/Rodizio/10.Hot_Sushi.png').image,
-        fadeInDuration: Duration(milliseconds: 100),
-  ),
+    PhotoViewGalleryPageOptions(
+      imageProvider: AssetImage('assets/Rodizio/12.Couvert.png'),
+      minScale: PhotoViewComputedScale.contained * 1,
+      maxScale: PhotoViewComputedScale.contained * 2,
     ),
-    Container(
-      child: FadeInImage(
-  placeholder: MemoryImage(kTransparentImage),
-  image:Image.asset('assets/Rodizio/11.Couvert.png').image,
-
-  fadeInDuration: Duration(milliseconds: 100),
-  )
+    PhotoViewGalleryPageOptions(
+      imageProvider: AssetImage('assets/Rodizio/13.Teppan_Yaki.png'),
+      minScale: PhotoViewComputedScale.contained * 1,
+      maxScale: PhotoViewComputedScale.contained * 2,
     ),
-    Container(
-      child: FadeInImage(
-    placeholder: MemoryImage(kTransparentImage),
-  image:Image.asset('assets/Rodizio/12.Couvert.png').image,
-
-  fadeInDuration: Duration(milliseconds: 100),
-  )
+    PhotoViewGalleryPageOptions(
+      imageProvider: AssetImage('assets/Rodizio/14.Teppan_Yaki.png'),
+      minScale: PhotoViewComputedScale.contained * 1,
+      maxScale: PhotoViewComputedScale.contained * 2,
     ),
-    Container(
-      child: FadeInImage(
-    placeholder: MemoryImage(kTransparentImage),
-  image:Image.asset('assets/Rodizio/13.Teppan_Yaki.png').image,
-
-  fadeInDuration: Duration(milliseconds: 100),
-  )
+    PhotoViewGalleryPageOptions(
+      imageProvider: AssetImage('assets/Rodizio/15.Especial_Jantar.png'),
+      minScale: PhotoViewComputedScale.contained * 1,
+      maxScale: PhotoViewComputedScale.contained * 2,
     ),
-    Container(
-      child: FadeInImage(
-      placeholder: MemoryImage(kTransparentImage),
-  image:Image.asset('assets/Rodizio/14.Teppan_Yaki.png').image,
-
-  fadeInDuration: Duration(milliseconds: 100),
-  )
-    ),
-    Container(
-      child: FadeInImage(
-  placeholder: MemoryImage(kTransparentImage),
-  image:Image.asset('assets/Rodizio/15.Especial_Jantar.png').image,
-
-  fadeInDuration: Duration(milliseconds: 100),
-  )
-    ),
-    Container(
-      child: FadeInImage(
-  placeholder: MemoryImage(kTransparentImage),
-  image:Image.asset('assets/Rodizio/16.Sobremesas.png').image,
-
-  fadeInDuration: Duration(milliseconds: 100),
-  )
+    PhotoViewGalleryPageOptions(
+      imageProvider: AssetImage('assets/Rodizio/16.Sobremesas.png'),
+      minScale: PhotoViewComputedScale.contained * 1,
+      maxScale: PhotoViewComputedScale.contained * 2,
     ),
   ];
 }
 
-void pageSwitch(String categoria,PreloadPageController _pageController){
+void pageSwitch(String categoria,PageController _pageController){
   switch(categoria){
     case 'Combinados':
       _pageController.animateToPage(0, duration: Duration(milliseconds: 500), curve: Curves.easeInOut);

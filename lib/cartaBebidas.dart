@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:preload_page_view/preload_page_view.dart';
 import 'package:transparent_image/transparent_image.dart';
-
+import 'package:photo_view/photo_view.dart';
+import 'package:photo_view/photo_view_gallery.dart';
 class cartaBebidasScaffold extends StatefulWidget {
 
   @override
@@ -112,11 +113,12 @@ class cartaBebidasBody extends State<cartaBebidasScaffold> {
 List<Widget> _buildPages(){
   return[
     Container(
-      child: FadeInImage(
-        placeholder: MemoryImage(kTransparentImage),
-        image: Image.asset('assets/bebidas/bebidas.jpg').image,
-        fadeInDuration: Duration(milliseconds: 200),
-      )//
+        child: FadeInImage(
+          placeholder: MemoryImage(kTransparentImage),
+          image: Image.asset('assets/bebidas/bebidas.jpg').image,
+          fadeInDuration: Duration(milliseconds: 200),
+        ),
+  //
     ),
     Container(
       child: Image.asset('assets/bebidas/branco_verde.jpg'),

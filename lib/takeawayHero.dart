@@ -116,8 +116,6 @@ class itemGridView extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-
-
     return GridView.builder(
       itemCount: num_items,
       itemBuilder: (BuildContext context, int index){
@@ -207,7 +205,7 @@ class itemOverlayState extends State<itemOverlay> with SingleTickerProviderState
             scale: scaleAnimation,
             child: Container(
               width: 300,
-              height: 425,
+              height: 450,
               color: Colors.transparent,
               child: Stack(
                   overflow: Overflow.visible,
@@ -216,7 +214,7 @@ class itemOverlayState extends State<itemOverlay> with SingleTickerProviderState
                     Positioned(
                       bottom: 0,
                       child: Container(
-                        height: 350,
+                        height: 400,
                         width: 300,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
@@ -287,6 +285,12 @@ class itemOverlayState extends State<itemOverlay> with SingleTickerProviderState
                         ),
                       ),
                     ),
+                    Positioned(
+                      top: 430,
+                      child: Container(
+                        child: Text('*Imagem meramente ilustrativa',style: TextStyle(fontSize: 10,color: Colors.grey),),
+                      ),
+                    )
                   ],
                 ),
             ),
