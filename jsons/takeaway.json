@@ -76,7 +76,7 @@
     "nome": "Tempura de Gambas",
     "IMGpath": "assets/takeaway/7.tempuraGambas.JPG",
     "price": 7.90,
-    "description":"Gambas fritas, previamentes mergulhadas em massa de tempura.\nUm dos vários clássicos crocantes da gastronomia japonesa.",
+    "description":"Gambas fritas, previamentes mergulhadas em farinha de tempura.\nUm dos vários clássicos crocantes da gastronomia japonesa.",
     "ingredients": ["Gambas","Farinha","Ovos"]
   },
 
@@ -94,8 +94,8 @@
     "nome": "Gambas Croquete",
     "IMGpath": "assets/takeaway/42.gambasCroquete.JPG",
     "price": 7.90,
-    "description": "",
-    "ingredients": ["Gambas","Farinha"]
+    "description": "Gambas passadas em farinha, ovos e pão ralado, fritas em óleo até crocantes.",
+    "ingredients": ["Gambas","Farinha","Ovos"]
   },
 
   {
@@ -375,8 +375,8 @@
     "nome": "Futumaki Frito",
     "IMGpath": "assets/takeaway/37.futuFrito.JPG",
     "price": 7.90,
-    "description": "",
-    "ingredients": []
+    "description": "Rolo de sushi frito mais largo do que usual. Consiste em salmão, abacate e pepino.",
+    "ingredients": ["Salmão","Abacate","Pepino","Arroz de sushi","Nori"]
   },
   {
     "id": 47,
@@ -468,8 +468,8 @@
     "nome": "Molho Agridoce",
     "IMGpath": "assets/takeaway/molhoAgridoce.JPG",
     "price": 0.65,
-    "description": "",
-    "ingredients": []
+    "description": "Molho asiático. Feito com pimentas vermelhas, vinagre de arroz e açúcar.",
+    "ingredients": ["Pimentas vermelhas","Vinagre de arroz","Açúcar"]
   },
   {
     "id": "",
