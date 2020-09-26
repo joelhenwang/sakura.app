@@ -35,6 +35,48 @@ class contactosBody extends State<contactosScaffold> {
             restContactContainer(restJson: 'povoa.json',),
             restContactContainer(restJson: 'oeiras.json',),
             restContactContainer(restJson: 'lindaVelha.json',),
+            Column(
+              children: [
+                InkWell(
+                  child: Container(
+                    width: MediaQuery.of(context).size.width * 0.85,
+                    child: Text("Sugerir ideia\nEnvie-nos um email!",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.blue,fontSize: 18),
+                    ),
+                    margin: EdgeInsets.only(top: 5,bottom: 5),
+                    padding: EdgeInsets.only(top: 10,bottom: 10),
+                    color: Colors.white,
+                  ),
+                  onTap: ()=>showDialog(
+                      context: context,
+                      builder: (context) => AlertDialog(
+                        title: Text('Encontrou um problema na App? Quer sugerir algo?'),
+                        content: Text(
+                            'Envie-nos um email!\n'
+                                'Iremos fazer o melhor para corrigir qualquer problema e, possivelmente, tentar implementar as vossa sugestões!\n'
+                                '\n'
+                                'Muito Obrigado!'
+                        ),
+                        actions: <Widget>[
+                          FlatButton(
+                            child: Text('Fechar',style: TextStyle(color: Colors.grey),),
+                            onPressed: (){
+                              Navigator.of(context).pop();
+                            },
+                          ),
+                          FlatButton(
+                              child: Text('Escrever email',style:
+                              TextStyle(fontWeight: FontWeight.bold,color: Colors.lightBlue),
+                              ),
+                              onPressed: ()=>launch('mailto:sakura.restaurante.app@gmail.com')
+                          )
+                        ],
+                      )
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       )
@@ -128,6 +170,10 @@ class restContactContainer extends StatelessWidget {
                                     ]
                                 ),
                               )
+                          ),
+                          Container(
+                            height: 1,
+                            color: Color.fromARGB(255, 235, 235, 235),
                           ),
                           ListTile(
                             onTap: () =>

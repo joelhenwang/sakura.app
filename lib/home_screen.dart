@@ -159,39 +159,6 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
                             alignment: Alignment.bottomCenter,
                             height: 100,
                           ),
-                          Container(
-                            margin: EdgeInsets.only(right: 10),
-                            alignment: Alignment.bottomRight,
-                            child: IconButton(
-                              icon: Icon(Icons.bug_report,size: 40,),
-                              onPressed: ()=>showDialog(
-                                  context: context,
-                                builder: (context) => AlertDialog(
-                                  title: Text('Encontrou um problema na App? Quer sugerir algo?'),
-                                  content: Text(
-                                      'Envie-nos um email!\n'
-                                          'Iremos fazer o melhor para corrigir qualquer problema e, possivelmente, tentar implementar as vossa sugestões!\n'
-                                          '\n'
-                                          'Muito Obrigado!'
-                                  ),
-                                  actions: <Widget>[
-                                    FlatButton(
-                                      child: Text('Fechar',style: TextStyle(color: Colors.grey),),
-                                      onPressed: (){
-                                        Navigator.of(context).pop();
-                                      },
-                                    ),
-                                    FlatButton(
-                                      child: Text('Escrever email',style:
-                                                  TextStyle(fontWeight: FontWeight.bold,color: Colors.lightBlue),
-                                            ),
-                                      onPressed: ()=>launch('mailto:sakura.restaurante.app@gmail.com')
-                                    )
-                                  ],
-                                )
-                              ),
-                            )
-                          )
                         ],
                       ),
                     ),
