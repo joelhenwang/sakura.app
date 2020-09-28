@@ -80,14 +80,14 @@ class ementaBody extends State<ementaScaffold>{
             height: MediaQuery.of(context).size.height * 0.8,
             width: MediaQuery.of(context).size.width,
             color: Colors.black,
-            child: PhotoViewGallery(
-              pageController: _pageController,
+            child: PageView(
+              controller: _pageController,
               onPageChanged: (page){
                 setState(() {
                   categoria = categories2[page];
                 });
               },
-              pageOptions: _buildPages(),
+              children: _buildPages(),
             )
           ),
           Expanded(
@@ -110,7 +110,7 @@ class ementaBody extends State<ementaScaffold>{
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
-                      fontSize: 18
+                      fontSize: 16
                     ),
                     dropdownColor: Color.fromARGB(255, 100, 90, 90),
                     onChanged: (String newValue){
@@ -144,86 +144,41 @@ class ementaBody extends State<ementaScaffold>{
   }
 }
 
-List<PhotoViewGalleryPageOptions> _buildPages(){
+List<Widget> _buildPages(){
   return[
-    PhotoViewGalleryPageOptions(
-      imageProvider: AssetImage('assets/Rodizio/1.Combinados.png'),
-      minScale: PhotoViewComputedScale.contained * 1,
-      maxScale: PhotoViewComputedScale.contained * 2,
-    ),
-    PhotoViewGalleryPageOptions(
-      imageProvider: AssetImage('assets/Rodizio/2.Nigiri_Sushi.png'),
-      minScale: PhotoViewComputedScale.contained * 1,
-      maxScale: PhotoViewComputedScale.contained * 2,
-    ),
-    PhotoViewGalleryPageOptions(
-      imageProvider: AssetImage('assets/Rodizio/3.Nigiri_sushi.png'),
-      minScale: PhotoViewComputedScale.contained * 1,
-      maxScale: PhotoViewComputedScale.contained * 2,
-    ),PhotoViewGalleryPageOptions(
-      imageProvider: AssetImage('assets/Rodizio/4.Gunkan_Sushi.png'),
-      minScale: PhotoViewComputedScale.contained * 1,
-      maxScale: PhotoViewComputedScale.contained * 2,
-    ),
-    PhotoViewGalleryPageOptions(
-      imageProvider: AssetImage('assets/Rodizio/5.Sashimi.png'),
-      minScale: PhotoViewComputedScale.contained * 1,
-      maxScale: PhotoViewComputedScale.contained * 2,
-    ),PhotoViewGalleryPageOptions(
-      imageProvider: AssetImage('assets/Rodizio/6.Temaki.png'),
-      minScale: PhotoViewComputedScale.contained * 1,
-      maxScale: PhotoViewComputedScale.contained * 2,
-    ),
-    PhotoViewGalleryPageOptions(
-      imageProvider: AssetImage('assets/Rodizio/7.California_maki.png'),
-      minScale: PhotoViewComputedScale.contained * 1,
-      maxScale: PhotoViewComputedScale.contained * 2,
-    ),
-    PhotoViewGalleryPageOptions(
-      imageProvider: AssetImage('assets/Rodizio/8.Uramaki.png'),
-      minScale: PhotoViewComputedScale.contained * 1,
-      maxScale: PhotoViewComputedScale.contained * 2,
-    ),
-    PhotoViewGalleryPageOptions(
-      imageProvider: AssetImage('assets/Rodizio/9.Braseados.png'),
-      minScale: PhotoViewComputedScale.contained * 1,
-      maxScale: PhotoViewComputedScale.contained * 2,
-    ),
-    PhotoViewGalleryPageOptions(
-      imageProvider: AssetImage('assets/Rodizio/10.Hot_Sushi.png'),
-      minScale: PhotoViewComputedScale.contained * 1,
-      maxScale: PhotoViewComputedScale.contained * 2,
-    ),
-    PhotoViewGalleryPageOptions(
-      imageProvider: AssetImage('assets/Rodizio/11.Couvert.png'),
-      minScale: PhotoViewComputedScale.contained * 1,
-      maxScale: PhotoViewComputedScale.contained * 2,
-    ),
-    PhotoViewGalleryPageOptions(
-      imageProvider: AssetImage('assets/Rodizio/12.Couvert.png'),
-      minScale: PhotoViewComputedScale.contained * 1,
-      maxScale: PhotoViewComputedScale.contained * 2,
-    ),
-    PhotoViewGalleryPageOptions(
-      imageProvider: AssetImage('assets/Rodizio/13.Teppan_Yaki.png'),
-      minScale: PhotoViewComputedScale.contained * 1,
-      maxScale: PhotoViewComputedScale.contained * 2,
-    ),
-    PhotoViewGalleryPageOptions(
-      imageProvider: AssetImage('assets/Rodizio/14.Teppan_Yaki.png'),
-      minScale: PhotoViewComputedScale.contained * 1,
-      maxScale: PhotoViewComputedScale.contained * 2,
-    ),
-    PhotoViewGalleryPageOptions(
-      imageProvider: AssetImage('assets/Rodizio/15.Especial_Jantar.png'),
-      minScale: PhotoViewComputedScale.contained * 1,
-      maxScale: PhotoViewComputedScale.contained * 2,
-    ),
-    PhotoViewGalleryPageOptions(
-      imageProvider: AssetImage('assets/Rodizio/16.Sobremesas.png'),
-      minScale: PhotoViewComputedScale.contained * 1,
-      maxScale: PhotoViewComputedScale.contained * 2,
-    ),
+
+    Image.asset('assets/Rodizio/1.Combinados.png'),
+
+    Image.asset('assets/Rodizio/2.Nigiri_Sushi.png'),
+
+    Image.asset('assets/Rodizio/3.Nigiri_sushi.png'),
+
+    Image.asset('assets/Rodizio/4.Gunkan_Sushi.png'),
+
+    Image.asset('assets/Rodizio/5.Sashimi.png'),
+
+    Image.asset('assets/Rodizio/6.Temaki.png'),
+
+    Image.asset('assets/Rodizio/7.California_maki.png'),
+
+    Image.asset('assets/Rodizio/8.Uramaki.png'),
+
+    Image.asset('assets/Rodizio/9.Braseados.png'),
+
+    Image.asset('assets/Rodizio/10.Hot_Sushi.png'),
+
+    Image.asset('assets/Rodizio/11.Couvert.png'),
+
+    Image.asset('assets/Rodizio/12.Couvert.png'),
+
+    Image.asset('assets/Rodizio/13.Teppan_Yaki.png'),
+
+    Image.asset('assets/Rodizio/14.Teppan_Yaki.png'),
+
+    Image.asset('assets/Rodizio/15.Especial_Jantar.png'),
+
+    Image.asset('assets/Rodizio/16.Sobremesas.png'),
+
   ];
 }
 
